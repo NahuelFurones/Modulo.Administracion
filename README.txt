@@ -19,15 +19,6 @@ Contiene un menú principal con submenús para realizar altas, bajas, modificaci
 - `SysAdmin.htm` — Página principal del módulo.
 - `/Paginas/` — Contiene las páginas correspondientes a cada opción del menú.
 
-## Diseño Web Responsivo
-
-<!-- Comentario replicado del HTML -->
-> Este proyecto implementa diseño responsivo con **TailwindCSS**:
-> - Framework basado en clases utilitarias que permite adaptar contenido a diferentes resoluciones.
-> - Clases como `flex`, `w-full`, `max-w-4xl`, `py-2`, etc. aseguran el diseño fluido.
-> - Tailwind se incorpora vía CDN:  
->   `<script src="https://cdn.tailwindcss.com"></script>`
-
 ## Instalación
 
 No requiere instalación. Solo abrir `SysAdmin.htm` en el navegador.
