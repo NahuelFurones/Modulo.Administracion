@@ -1,0 +1,95 @@
+<!--
+  MÓDULO DE ADMINISTRACIÓN DEL SISTEMA
+  Desarrollado con TailwindCSS para diseño limpio y responsivo.
+  Diseño responsivo con TailwindCSS explicado en comentarios.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MÓDULO DE ADMINISTRACIÓN DEL SISTEMA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+  <!-- Comentario sobre la responsividad -->
+  <!--
+    Diseño web responsivo implementado con TailwindCSS (https://tailwindcss.com/):
+    - TailwindCSS es un framework CSS basado en utilidades que facilita la creación
+      de interfaces responsivas sin necesidad de escribir CSS personalizado.
+    - Se incorpora vía CDN con <script src="https://cdn.tailwindcss.com"></script>.
+    - Las clases de Tailwind como 'flex', 'min-h-screen', 'p-6', 'max-w-4xl', 'text-center',
+     'group-hover:block', entre otras, controlan el diseño y la responsividad del contenido.
+  -->
+
+  <!-- Header -->
+  <header class="w-full bg-white shadow py-2 px-4 relative">
+    <img src="/src/chacabuco_logo.png" alt="Logo" class="h-20 w-25 object-contain" />
+    <h1 class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-xl font-bold text-gray-800 pointer-events-none select-none">
+      MÓDULO DE ADMINISTRACIÓN DEL SISTEMA
+    </h1>
+  </header>
+
+  <!-- Contenedor principal -->
+  <main class="flex-grow flex flex-col items-center p-6">
+
+    <nav class="w-full max-w-4xl bg-white rounded-lg shadow p-6">
+      <ul class="flex justify-around text-lg font-semibold text-gray-700">
+
+        <!-- Sección Materia -->
+        <li class="group relative cursor-pointer">
+          <div class="inline-block">
+            <span class="hover:text-blue-600">Materia</span>
+            <ul class="absolute left-0 mt-1 hidden group-hover:flex flex-col bg-white border rounded shadow-md w-48 z-50">
+              <li><a href="/Paginas/AltaMateria.htm" class="px-4 py-1 hover:bg-blue-100">Altas</a></li>
+              <li><a href="/Paginas/BajaMateria.htm" class="px-4 py-2 hover:bg-blue-100">Bajas</a></li>
+              <li><a href="/Paginas/ModificaMateria.htm" class="px-4 py-2 hover:bg-blue-100">Modificaciones</a></li>
+              <li><a href="/Paginas/TodasMaterias.htm" class="px-4 py-2 hover:bg-blue-100">Seleccionar Todo</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Sección Usuarios -->
+        <li class="group relative cursor-pointer">
+          <div class="inline-block">
+            <span class="hover:text-blue-600">Usuarios</span>
+            <ul class="absolute left-0 mt-1 hidden group-hover:flex flex-col bg-white border rounded shadow-md w-48 z-50">
+              <li><a href="/Paginas/AltaUsuario.htm" class="px-4 py-2 hover:bg-blue-100">Altas</a></li>
+              <li><a href="/Paginas/BajaUsuario.htm" class="px-4 py-2 hover:bg-blue-100">Bajas</a></li>
+              <li><a href="/Paginas/ModificaUsuario.htm" class="px-4 py-2 hover:bg-blue-100">Modificaciones</a></li>
+              <li><a href="/Paginas/TodosUsuarios.htm" class="px-4 py-2 hover:bg-blue-100">Seleccionar Todo</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Sección Vincular -->
+        <li class="group relative cursor-pointer">
+          <div class="inline-block">
+            <span class="hover:text-blue-600">Vincular</span>
+            <ul class="absolute left-0 mt-1 hidden group-hover:flex flex-col bg-white border rounded shadow-md w-48 z-50">
+              <li><a href="/Paginas/AltaMatUsu.htm" class="px-4 py-2 hover:bg-blue-100">Altas</a></li>
+              <li><a href="/Paginas/BajaMatUsu.htm" class="px-4 py-2 hover:bg-blue-100">Bajas</a></li>
+              <li><a href="/Paginas/ModificaMatUsu.htm" class="px-4 py-2 hover:bg-blue-100">Modificaciones</a></li>
+              <li><a href="/Paginas/TodoMatUsu.htm" class="px-4 py-2 hover:bg-blue-100">Seleccionar Todo</a></li>
+            </ul>
+          </div>
+        </li>
+
+      </ul>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 text-center py-4 mt-auto">
+    <p class="text-sm">
+      © 2025 Chacabuco. Todos los derechos reservados.
+      <br/>
+      Desarrollado por Nahuel Furones y Luca Paez.
+    </p>
+  </footer>
+
+</body>
+</html>
