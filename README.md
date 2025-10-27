@@ -25,7 +25,7 @@ No requiere instalación. Solo abrir `SysAdmin.htm` en el navegador.
 
 ## Integrantes
 
-- Alumnos: Nahuel Furones y Luca Paez
+- Alumno: Nahuel Furones
 - Profesor: Hernán Lanzillotta
 - Curso: 7°4ta
 
